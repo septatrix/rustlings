@@ -8,10 +8,14 @@
 // 40 or more at once, each apple only costs 1! Write a function that calculates
 // the price of an order of apples given the quantity bought. No hints this time!
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(n: u8) -> u8 {
+    // see https://github.com/rust-lang/rustlings/issues/1169
+    if n > 40 {
+        return n;
+    }
+    2 * n
+}
 
 // Don't modify this function!
 #[test]
